@@ -31,6 +31,7 @@
 
 #### 기본 전처리
 
+- 결측치, 중복값 X
 - 불필요 features제거
 - target에 PowerTransformer 적용
 - 범주형 데이터 LabelEncoder 적용
