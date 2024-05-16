@@ -21,6 +21,8 @@
 - 데이터에 결측지, 중복행 X
 - 범주형 데이터 label_encoders 진행
 - target데이터 PowerTransformer 진행
+![44](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/6c7fe89e-43f4-420d-8a8b-2d352461505f)
+![124](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/8f136e53-1d47-47b1-9ca2-5e8177da6724)
 
 
 - 먼저 전체 모델들을 이용하여 선형 회귀 예측을 수행
