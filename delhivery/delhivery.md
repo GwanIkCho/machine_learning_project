@@ -23,6 +23,8 @@
 #### 기본 전처리
 
 - 데이터에 소량의 결측치 제거(213개), 중복값 X
+- ![2](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/60724bb8-3f4d-4197-99a8-af67848aa666)
+
 - 범주형 데이터 LabelEncoder 진행
 
 - PowerTransformer 적용  
