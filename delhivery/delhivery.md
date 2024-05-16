@@ -47,7 +47,8 @@ MSE: 0.0314, RMSE: 0.1772, R2: 0.9529
 LGBMRegressor
 MSE: 0.0412, RMSE: 0.2030, R2: 0.9381
 ```
-
+- 상관관계가 높은 feature와 확인  
+![5124](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/0908f8ee-1e23-4428-af66-a820c9132ffa)
 
 - PolynomialFeatures을 사용하여 비선형 확인(degree=6)
 <img src='./image/img4.png'>
