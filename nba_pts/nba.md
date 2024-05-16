@@ -29,11 +29,14 @@
 
 ---
 
+
 #### 기본 전처리
 
 - 결측치, 중복값 X
 - 불필요 features제거
 - target에 PowerTransformer 적용
+- ![제목 없음](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/7ac19c1b-5f15-4b57-9b2e-d3b9c937fb00)
+
 - 범주형 데이터 LabelEncoder 적용
 
 
