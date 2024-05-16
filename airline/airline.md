@@ -31,7 +31,8 @@
 
 ---  
   
- - 소량의 결측치 제거(393개)
+ - 소량의 결측치 제거(393개)  
+![1111](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/068f3a66-fa0f-4f17-9d5f-b55d2b3b148b)  
 
  - Logistic모델을 사용해서 오차행렬 시각화
 <img src='./image/img02.png'>
