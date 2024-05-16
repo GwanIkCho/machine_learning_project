@@ -52,7 +52,7 @@ MSE: 0.0412, RMSE: 0.2030, R2: 0.9381
 
 ---
 
-- LGB의 R2가 0.9381로 과적합 가능성이 있고 확인필요  
+- XGB R2가 0.9529 과적합 가능성이 있고 확인필요  
 
 - Kfold cross_val_score를 통한 비교
 <img src='./image/img5.png'>      
@@ -61,7 +61,7 @@ MSE: 0.0412, RMSE: 0.2030, R2: 0.9381
 - Pytorch를 통해 loss를 통한 비교   
 <img src='./image/img6.png'>    
    
-- LGB 사용하였을때 학습데이터와 테스트 데이터의 대한 예측값  
+- XGB 사용하였을때 학습데이터와 테스트 데이터의 대한 예측값  
 <img src='./image/img7.png'>  
 
 ```
