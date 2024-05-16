@@ -31,7 +31,7 @@
 
 
 - LinearRegression 의 R2가 045859로 매우낮은 수치를 보이고 있으며 다른 모델들은 높은 수치를 보여주고있다.
-요<img src='./image/img3.png'>
+<img src='./image/img3.png'>
 
 ```
 LinearRegression
