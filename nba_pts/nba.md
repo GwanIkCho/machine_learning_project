@@ -22,15 +22,38 @@
 
 -  pts: 득점 (points)
 
+##### 목표
+
+- 높은 득점을 기록핤 수 있는 선수를 찾음으로써 경기운영 및 선수영입에 필요한 데이터를 찾는다.
+
+
 ---
 
-- 데이터에 결측지, 중복행 X
+#### 기본 전처리
 
-- 먼저 전체 모델들을 이용하여 선형 회귀 예측을 수행
+- 불필요 features제거
+- target에 PowerTransformer 적용
+- 범주형 데이터 LabelEncoder 적용
+
+
+전체 모델들을 이용하여 선형 회귀 예측을 수행
 <img src='./image/nba01.png'>
 
-- LinearRegression 의 R2가 0.9089로 매우 높은수치를 보이고 있어 과적합 가능성이 있고 확인필요
+```
+LinearRegression
+MSE: 0.0995, RMSE: 0.3154, R2: 0.9089
+DecisionTreeRegressor
+MSE: 0.0816, RMSE: 0.2856, R2: 0.9253
+GradientBoostingRegressor
+MSE: 0.0310, RMSE: 0.1761, R2: 0.9716
+XGBRegressor
+MSE: 0.0212, RMSE: 0.1455, R2: 0.9806
+LGBMRegressor
+MSE: 0.0175, RMSE: 0.1325, R2: 0.9839 
+```
 
+- Linear모델에서의 R2는 0.9809이며 다른 트리모델들도 R2점수가 높은수치로 나타나있다.
+  과적합이 의심되는 상황이며 구체적인 비교가 필요.
 
 
 - Kfold cross_val_score를 통한 비교
@@ -43,6 +66,7 @@
 <img src='./image/nba04.png'>
 
 ---
+
 #### 최적의 모델찾기
 
 - Pipeline을 통해 StandardScaler 및 차원축소(2차원) 진행
@@ -55,3 +79,19 @@
 
 <img src='./image/nba05.png'>
 
+```
+LGBMRegressor
+MSE: 0.0179, RMSE: 0.1337, R2: 0.9836
+D2LGBMRegressor
+MSE: 0.2779, RMSE: 0.5271, R2: 0.7455
+Ridge
+MSE: 0.1526, RMSE: 0.3906, R2: 0.8603
+D2Ridge
+MSE: 0.3254, RMSE: 0.5704, R2: 0.7020
+```
+
+---
+#### 결론
+
+- 데이터가 많아져 차원축소를 해야한다면 LGM모델을 사용하여 효율을 높이고 효율을 따지지 않아도 된다면 Ridge를 사용하여 제약을 준다.
+- 선수의 득점을 예측하여 경기중 위협선수에게 제약을 주거나 득점력이 있는 선수를 영입할 수 있는 판단의 근거를 만든다.
