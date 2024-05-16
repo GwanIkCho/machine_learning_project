@@ -38,8 +38,9 @@
  - Logistic모델을 사용해서 오차행렬 시각화
 <img src='./image/img02.png'>
 
- - Kfold cross_val_score를 통한 과적합 확인
-<img src='./image/img01.png'>
+ - Kfold cross_val_score를 통한 과적합 확인  
+
+![11551](https://github.com/GwanIkCho/machine_learning_project/assets/156397946/ff4e1a61-48d5-4186-93bd-3f23b75011bf)
 
 ---
 
