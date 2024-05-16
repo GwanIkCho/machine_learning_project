@@ -61,6 +61,6 @@ MSE: 0.0412, RMSE: 0.2030, R2: 0.9381
 - Pytorch를 통해 loss를 통한 비교   
 <img src='./image/img6.png'>    
    
-- LinearRegression 사용하였을때 학습데이터와 테스트 데이터의 대한 예측값  
+- LGB 사용하였을때 학습데이터와 테스트 데이터의 대한 예측값  
 <img src='./image/img7.png'>  
 
