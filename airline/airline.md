@@ -34,10 +34,10 @@
  - 소량의 결측치 제거(393개)
 
  - Logistic모델을 사용해서 오차행렬 시각화
-<img src='./image/img01.png'>
+<img src='./image/img02.png'>
 
  - Kfold cross_val_score를 통한 과적합 확인
-<img src='./image/img02.png'>
+<img src='./image/img01.png'>
 
 ---
 
